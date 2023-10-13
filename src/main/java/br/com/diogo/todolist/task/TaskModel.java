@@ -1,4 +1,4 @@
-package br.com.diogo.todolist.user.task;
+package br.com.diogo.todolist.task;
 
 import br.com.diogo.todolist.user.UserModel;
 import jakarta.persistence.Column;
@@ -22,7 +22,7 @@ public class TaskModel {
     private String description;
     @Column(length = 50)
     private String title;
-    private UUID userId;
+    private UUID idUser;
     private LocalDateTime startAt;
     private LocalDateTime endAt;
     private String priority;
